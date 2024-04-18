@@ -1,14 +1,14 @@
 {
-  "name": "creative-agency-landing-page",
-  "private": true,
+  "name": "@luisfalconmx/creative-agency-landing-page",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host --port 3000",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "sass": "^1.75.0",
     "vite": "^5.2.0"
   }
 }

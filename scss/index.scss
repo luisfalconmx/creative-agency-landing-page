@@ -1,0 +1,11 @@
+// load essential files
+@import "./vars";
+@import "./globals";
+
+// load all mixins
+@import "./mixins/title";
+@import "./mixins/paragraph.scss";
+@import "./mixins/button.scss";
+
+// load all components
+@import "components/hero.scss";
