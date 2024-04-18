@@ -1,0 +1,56 @@
+.testimonial {
+  padding: 0 25px;
+  margin-bottom: 100px;
+
+  &__caption {
+    @include caption;
+    margin: 0 auto 10px;
+  }
+
+  &__title {
+    @include title;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  &__card {
+    box-shadow: 0 8px 24px 0 rgba(#000000, 15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 40px;
+  }
+
+  &__card-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__card-image {
+    border-radius: 100%;
+  }
+
+  &__card-username {
+    font-size: 1.8rem;
+    color: $color-accent;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  &__card-position {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  &__card-description {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin: 0;
+  }
+}
