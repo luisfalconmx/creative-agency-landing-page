@@ -1,0 +1,44 @@
+.about {
+  padding: 0 25px;
+  margin-bottom: 100px;
+
+  &__caption {
+    @include caption;
+    margin: 0 auto 10px;
+  }
+
+  &__title {
+    @include title;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  &__description {
+    @include paragraph;
+    margin-bottom: 35px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    @include button;
+
+    &--outline {
+      @include button("outline");
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    margin: auto;
+  }
+}
