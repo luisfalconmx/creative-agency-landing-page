@@ -1,0 +1,74 @@
+.footer {
+  padding: 45px 26px;
+  background-color: $color-oil;
+  color: white;
+
+  &__brand {
+    width: fit-content;
+    background-color: white;
+    margin-bottom: 80px;
+    border-radius: 20px;
+    padding: 15px 25px;
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-bottom: 45px;
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+
+    & b {
+      font-weight: bold;
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+  }
+
+  &__localization {
+    margin-bottom: 90px;
+  }
+
+  &__localization-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+    display: block;
+  }
+
+  &__localization-text {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  &__social {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &__divider {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__leyend {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+}
