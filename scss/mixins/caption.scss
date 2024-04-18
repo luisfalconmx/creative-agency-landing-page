@@ -1,0 +1,7 @@
+@mixin caption {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: $color-accent;
+  display: block;
+  width: fit-content;
+}

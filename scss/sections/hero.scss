@@ -1,9 +1,11 @@
 .hero {
   padding: 0 15px;
+  margin-bottom: 99px;
 
   &__title {
     @include title("large");
     margin-bottom: 20px;
+    text-align: center;
   }
 
   &__description {

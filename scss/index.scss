@@ -6,7 +6,9 @@
 @import "./mixins/title";
 @import "./mixins/paragraph.scss";
 @import "./mixins/button.scss";
+@import "./mixins/caption.scss";
 
-// load all components
-@import "components/header.scss";
-@import "components/hero.scss";
+// load all section styles
+@import "sections/header.scss";
+@import "sections/hero.scss";
+@import "sections/services.scss";
