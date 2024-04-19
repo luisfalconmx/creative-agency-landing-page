@@ -30,11 +30,17 @@
       </p>
       <button class="hero__button">Start Project</button>
 
-      <img
-        class="hero__image"
-        src="images/hero-image-mobile.png"
-        alt="Creative agency"
-      />
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="images/hero-image-desktop.png"
+        />
+        <img
+          class="hero__image"
+          src="images/hero-image-mobile.png"
+          alt="Creative agency"
+        />
+      </picture>
     </section>
 
     <section class="about">

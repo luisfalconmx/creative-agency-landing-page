@@ -3,4 +3,9 @@
   line-height: 2.4rem;
   color: $color-carbon;
   margin: 0;
+
+  @media (min-width: $md) {
+    font-size: 2rem;
+    line-height: 150%;
+  }
 }
