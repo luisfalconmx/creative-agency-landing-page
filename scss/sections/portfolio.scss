@@ -8,9 +8,18 @@ $images: (
   padding: 0 25px;
   margin-bottom: 100px;
 
+  @media (min-width: $md) {
+    max-width: 1238px;
+    margin: 0 auto 100px;
+  }
+
   &__caption {
     @include caption;
     margin: 0 auto 10px;
+
+    @media (min-width: $md) {
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
@@ -23,6 +32,11 @@ $images: (
     @include paragraph;
     text-align: center;
     margin-bottom: 34px;
+
+    @media (min-width: $md) {
+      max-width: 674px;
+      margin: 0 auto 48px;
+    }
   }
 
   &__cards {
@@ -31,6 +45,10 @@ $images: (
     justify-items: center;
     gap: 32px;
     margin-bottom: 48px;
+
+    @media (min-width: $md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   &__card {
@@ -41,6 +59,12 @@ $images: (
     border-radius: 30px;
     overflow: hidden;
     position: relative;
+  }
+
+  &__card:nth-of-type(2) {
+    @media (min-width: $md) {
+      scale: 1.1;
+    }
   }
 
   &__card-title {
