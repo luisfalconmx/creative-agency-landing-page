@@ -37,6 +37,12 @@
     margin-bottom: 50px;
   }
 
+  &__picture {
+    display: block;
+    max-width: 950px;
+    margin: auto;
+  }
+
   &__image {
     width: 100%;
   }

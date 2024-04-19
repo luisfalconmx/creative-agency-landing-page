@@ -16,10 +16,28 @@
   <body>
     <header class="header">
       <img src="/images/logo.svg" alt="#" class="header__logo" />
-      <button class="header__button">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">
+              <b>Home</b>
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">About</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Services</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Projects</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__menu">
         <img src="/icons/icon-menu.svg" alt="#" />
       </button>
-      <nav class="header__nav">...</nav>
+      <button class="header__button">Contact Us</button>
     </header>
 
     <section class="hero">
@@ -30,7 +48,7 @@
       </p>
       <button class="hero__button">Start Project</button>
 
-      <picture>
+      <picture class="hero__picture">
         <source
           media="(min-width: 768px)"
           srcset="images/hero-image-desktop.png"

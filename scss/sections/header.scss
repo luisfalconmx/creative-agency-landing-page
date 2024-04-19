@@ -1,18 +1,75 @@
 .header {
-  margin: 40px 25px 69px;
+  padding: 0 25px;
+  margin: 40px auto 69px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1240px;
 
-  &__button {
+  @media (min-width: $lg) {
+    display: grid;
+    grid-template-columns: 200px 1fr 250px;
+    align-items: center;
+  }
+
+  @media (min-width: $lg) {
+    margin-top: 72px;
+  }
+
+  &__logo {
+    width: auto;
+
+    @media (min-width: $md) {
+      min-width: 136px;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @media (min-width: $md) {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 50px;
+  }
+
+  &__item {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: bold;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  &__menu {
     margin: 0;
     padding: 5px;
     border: 0;
     background-color: transparent;
     cursor: pointer;
+
+    @media (min-width: $lg) {
+      display: none;
+    }
   }
 
-  &__nav {
+  &__button {
+    @include button("outline");
     display: none;
+
+    @media (min-width: $md) {
+      display: block;
+    }
   }
 }
