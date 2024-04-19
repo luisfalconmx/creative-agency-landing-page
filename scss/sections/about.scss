@@ -1,6 +1,7 @@
 .about {
   padding: 0 25px;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
+  max-width: 1270px;
 
   &__caption {
     @include caption;
@@ -13,6 +14,21 @@
     margin-bottom: 35px;
   }
 
+  &__container {
+    @media (min-width: $md) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 30px;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    @media (min-width: $md) {
+      padding-top: 30px;
+    }
+  }
+
   &__description {
     @include paragraph;
     margin-bottom: 35px;
@@ -23,6 +39,11 @@
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 50px;
+
+    @media (min-width: $md) {
+      justify-content: flex-start;
+      gap: 25px;
+    }
   }
 
   &__button {
@@ -37,8 +58,15 @@
     }
   }
 
+  &__picture {
+    margin: auto;
+  }
+
   &__image {
     width: 100%;
-    margin: auto;
+
+    @media (min-width: $md) {
+      min-width: 638px;
+    }
   }
 }

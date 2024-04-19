@@ -4,4 +4,8 @@
   color: $color-accent;
   display: block;
   width: fit-content;
+
+  @media (min-width: $md) {
+    font-size: 2.4rem;
+  }
 }
