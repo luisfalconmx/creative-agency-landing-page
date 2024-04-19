@@ -239,19 +239,27 @@
     </section>
 
     <section class="collaboration">
-      <img
-        src="/images/collaboration-mobile.png"
-        alt="#"
-        class="collaboration__image"
-      />
+      <picture class="collaboration__picture">
+        <source
+          media="(min-width: 768px)"
+          srcset="/images/collaboration-desktop.png"
+        />
+        <img
+          src="/images/collaboration-mobile.png"
+          alt="#"
+          class="collaboration__image"
+        />
+      </picture>
 
-      <h2 class="collaboration__title">Interesting Collaboration With Us?</h2>
+      <div class="collaboration__content">
+        <h2 class="collaboration__title">Interesting Collaboration With Us?</h2>
 
-      <p class="collaboration__description">
-        Help you to reach your business goal
-      </p>
+        <p class="collaboration__description">
+          Help you to reach your business goal
+        </p>
 
-      <button class="collaboration__button">Get Started</button>
+        <button class="collaboration__button">Get Started</button>
+      </div>
     </section>
 
     <footer class="footer">
