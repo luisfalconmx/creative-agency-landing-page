@@ -2,6 +2,9 @@
   "name": "@luisfalconmx/creative-agency-landing-page",
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "vite --host --port 3000",
     "build": "vite build",
