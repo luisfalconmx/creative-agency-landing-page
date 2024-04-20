@@ -1,7 +1,7 @@
 <h1 align="center">creative-agency-landing-page</h1>
 
 <p align="center">
-  <b>The Password Generator is a web application developed using React.js that enables users to generate strong and secure passwords.</b><br />
+  <b>Responsive landing page for a creative agency, built using HTML, Sass (SCSS), and Vite. The landing page features a modern and responsive design, showcasing the agency's services and portfolio.</b><br />
   <sub>Created with ❤️ by luisfalconmx</sub>
 </p>
 
